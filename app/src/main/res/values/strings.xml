@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SuitmediaTest</string>
+    <string name="name">Nama</string>
+    <string name="palindrome">Palindrome</string>
+    <string name="check">Check</string>
+    <string name="next">Next</string>
+    <string name="is_palindrome">Is the text Palindrome?</string>
+    <string name="yes_palindrome">Yes, %1$s a Palindrome</string>
+    <string name="no_palindrome">No, %1$s not a Palindrome</string>
+    <string name="welcome">Welcome</string>
+    <string name="john_doe">John Doe</string>
+    <string name="selected_user">Selected User Name</string>
+    <string name="choose_user">Choose a User</string>
+    <string name="second_screen">Second Screen</string>
+    <string name="third_screen">Third Screen</string>
+    <string name="empty_users">User data is empty</string>
+    <string name="empty_name">Please input name first!</string>
+</resources>

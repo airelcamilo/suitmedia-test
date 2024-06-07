@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".view.MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="50dp"
+        app:lottie_rawRes="@raw/animation"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textColor="@color/navy_blue_700"
+        android:layout_marginHorizontal="20dp"
+        android:labelFor="@+id/ed_name"
+        android:alpha="0"
+        app:layout_constraintTop_toBottomOf="@+id/animation_view"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:alpha="100"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edl_name"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:alpha="0"
+        app:boxBackgroundColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:alpha="100">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="8dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_palindrome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/palindrome"
+        android:textColor="@color/navy_blue_700"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:labelFor="@+id/ed_palindrome"
+        android:alpha="0"
+        app:layout_constraintTop_toBottomOf="@+id/edl_name"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:alpha="100"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edl_palindrome"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:alpha="0"
+        app:boxBackgroundColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/tv_palindrome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:alpha="100">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_palindrome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="8dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/bt_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/check"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        android:alpha="0"
+        style="@style/Widget.App.Button"
+        app:layout_constraintTop_toBottomOf="@+id/edl_palindrome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:alpha="100"
+        />
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0"
+        style="@style/Widget.App.Button"
+        app:layout_constraintTop_toBottomOf="@+id/bt_check"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:alpha="100"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
